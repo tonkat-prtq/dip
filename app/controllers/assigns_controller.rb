@@ -18,17 +18,17 @@ class AssignsController < ApplicationController
     redirect_to team_url(params[:team_id]), notice: destroy_message
   end
 
-  def update
-    team = Team.friendly.find(params[:team_id])
-    assign = Assign.find(params[:id])
-    if current_user.id == team.owner_id
-      team.update(owner_id: assign.user_id)
-      redirect_to team_url(team)
-    else
-      redirect_to team_url(team)
-    end
-  end
-  
+  # def update
+  #   team = Team.friendly.find(params[:team_id])
+  #   assign = Assign.find(params[:id])
+  #   if current_user.id == team.owner_id
+  #     team.update(owner_id: assign.user_id)
+  #     redirect_to team_url(team)
+  #   else
+  #     redirect_to team_url(team)
+  #   end
+  # end
+
   private
 
   def assign_params

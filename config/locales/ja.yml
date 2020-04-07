@@ -247,11 +247,13 @@ ja:
       cannot_edit_team: 'チームを編集できるのはチームリーダーだけです'
       invite_team_member: 'チームメンバー招待'
       team_leader: 'チームリーダー'
+      change_owner: 'チームリーダーを変更しました'
       leader: 'リーダー'
       invitation_placeholder: '招待したい人のメールアドレスを入力してください'
       edit_profile: 'プロフィールを編集'
       team_you_belong_to: '所属しているチーム'
       posted_articles: '投稿した記事一覧'
+      change_owner_mail: "%{name}のリーダーが移譲されました"
     button:
       submit: '投稿'
       edit: '編集'
