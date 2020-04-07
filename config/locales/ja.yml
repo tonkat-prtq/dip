@@ -237,6 +237,7 @@ ja:
       team_build2: 'チームを作成する'
       select_team: 'チーム選択'
       create_agenda: 'アジェンダ作成'
+      cannot_delete_agenda: 'アジェンダを削除出来るのは作ったユーザー、もしくは紐付いているチームのリーダーのみです'
       input_agenda_title: 'タイトル入力'
       input_team_name: 'チーム名を入力してください'
       recent_posts: '最近投稿された記事'
@@ -254,6 +255,7 @@ ja:
       team_you_belong_to: '所属しているチーム'
       posted_articles: '投稿した記事一覧'
       change_owner_mail: "%{name}のリーダーが移譲されました"
+      agenda_is_deleted: "%{agenda}が削除されました"
     button:
       submit: '投稿'
       edit: '編集'

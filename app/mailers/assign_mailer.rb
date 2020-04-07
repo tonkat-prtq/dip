@@ -7,8 +7,11 @@ class AssignMailer < ApplicationMailer
     mail to: @email, subject: I18n.t('views.messages.complete_registration')
   end
 
-  def change_owner_mail(team)
-    @team = team
-    mail to: @team.owner.email, subject: I18n.t('views.messages.change_owner_mail', name: @team.name)
+  def deleted_mail(members, agenda)
+    @members = members
+    @agenda = agenda
+    @members.each do |member|
+      mail to: member.email, subject: I18n.t('views.messages.agenda_is_deleted', agenda: @agenda.title)
+    end
   end
 end
